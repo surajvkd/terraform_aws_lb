@@ -41,3 +41,6 @@ resource "aws_lb_target_group_attachment" "tg-attach1" {
   target_group_arn = aws_alb_target_group.tg.arn
   target_id        = aws_instance.pub2.id
 }
+resource "aws_s3_bucket" "bucket" {
+  bucket = "suraj_08_03_23"
+}
